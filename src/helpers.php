@@ -89,7 +89,7 @@ function decodeDoubleBase64(array $result): array
                 }
 
                 if (is_string($value) && isValidBlob($value)) {
-                    $value = base64_decode(base64_decode($value));
+                    // $value = base64_decode(base64_decode($value));
                 }
             }
         }
